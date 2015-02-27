@@ -36,6 +36,18 @@ if ($userSay === yes) {
 ```
 
 ```php
+if ($datS__t === legit) {
+    ...
+}
+```
+
+```php
+if ($hustler === bonafide) {
+    ...
+}
+```
+
+```php
 if ($checkbox === ✔) {
     ...
 }
@@ -61,6 +73,11 @@ if ($orNot === ✘) {
 }
 ```
 
+```php
+if ($blilAndTedsJourney === bogus) {
+    ...
+}
+```
 And also uncertain constants:
 
 ```php
