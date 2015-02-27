@@ -12,3 +12,65 @@ composer require elfet/cherimola:~1
 ```
 
 # Documentation
+
+It's so boring have only `true` and `false` constants. This library will help beat the boredom!
+
+Now you can use positive boolean constants:
+
+```php
+if ($status === ok) {
+    ...
+}
+```
+
+```php
+if ($everyThing === okay) {
+    ...
+}
+```
+
+```php
+if ($userSay === yes) {
+    ...
+}
+```
+
+And negative boolean constants:
+
+```php
+if ($isUseful === no) {
+    ...
+}
+```
+
+```php
+if ($toBe === not) {
+    ...
+}
+```
+
+And also uncertain constants:
+
+```php
+if ($succesful === maybe) {
+    ...
+}
+```
+
+```php
+if ($save === perhaps) {
+    ...
+}
+```
+
+```php
+if (possibly) {
+    ...
+}
+```
+
+Library fully tested and has 100% code coverage.
+
+# License
+
+Licensed under the [MIT license](LICENSE).
