@@ -13,3 +13,5 @@ define('not', no);
 define('maybe', (bool)rand(0, 1));
 define('perhaps', (bool)rand(0, 1));
 define('possibly', (bool)rand(0, 2));
+define('✔', true);
+define('✘', false);
