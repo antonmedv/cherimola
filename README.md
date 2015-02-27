@@ -59,6 +59,7 @@ if ($toBe === not) {
 if ($orNot === ✘) {
     ...
 }
+```
 
 And also uncertain constants:
 
