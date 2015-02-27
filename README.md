@@ -74,7 +74,7 @@ if ($orNot === ✘) {
 ```
 
 ```php
-if ($blilAndTedsJourney === bogus) {
+if ($billAndTedsJourney === bogus) {
     ...
 }
 ```
@@ -94,6 +94,11 @@ if ($save === perhaps) {
 
 ```php
 if (possibly) {
+    ...
+}
+```
+```php
+if (probably) {
     ...
 }
 ```
