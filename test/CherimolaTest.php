@@ -54,6 +54,26 @@ class CherimolaTest extends PHPUnit_Framework_TestCase
     }
 
     /**
+     * @depends testNo
+     */
+    public function test✘() 
+    {
+        $this->assertTrue(defined('✘'), 'Failed asserting that constant `✘` does not defined.');
+        $this->assertInternalType('bool', ✘, 'Failed asserting that constant `✘` is not of type `bool`.');
+        $this->assertEquals(no, ✘, 'Failed asserting that constant `✘` is not match constant `no`.');
+    }
+
+    /**
+     * @depends testYes
+     */
+    public function test✔() 
+    {
+        $this->assertTrue(defined('✔'), 'Failed asserting that constant `✔` does not defined.');
+        $this->assertInternalType('bool', ✔, 'Failed asserting that constant `✔` is not of type `bool`.');
+        $this->assertEquals(yes, ✔, 'Failed asserting that constant `✔` is not match constant `yes`.');
+    }
+
+    /**
      * @param string $name
      * @param bool $value
      * @dataProvider randomConstantsProvider
