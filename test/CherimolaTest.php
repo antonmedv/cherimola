@@ -9,70 +9,32 @@ require __DIR__ . '/../vendor/autoload.php';
 
 class CherimolaTest extends PHPUnit_Framework_TestCase
 {
-    public function testYes()
-    {
-        $this->assertTrue(defined('yes'), 'Failed asserting that constant `yes` does not defined.');
-        $this->assertInternalType('bool', yes, 'Failed asserting that constant `yes` is not of type `bool`.');
-        $this->assertTrue(yes, 'Failed asserting that constant `yes` is not `true`.');
-    }
-
     /**
-     * @depends testYes
+     * @param string $name
+     * @param bool $value
+     * @param bool $expected
+     * @dataProvider constantsProvider
      */
-    public function testOk()
+    public function test($name, $value, $expected)
     {
-        $this->assertTrue(defined('ok'), 'Failed asserting that constant `ok` does not defined.');
-        $this->assertInternalType('bool', ok, 'Failed asserting that constant `ok` is not of type `bool`.');
-        $this->assertEquals(yes, ok, 'Failed asserting that constant `ok` is not match constant `yes`.');
+        $this->assertTrue(defined($name), "Failed asserting that constant `$name` does not defined.");
+        $this->assertInternalType('bool', $value, "Failed asserting that constant `$name` is not of type `bool`.");
+        $this->assertEquals($expected, $value, "Failed asserting that constant `$name` is not `" . ($expected ? 'true' : 'false') . "`.");
     }
 
-    /**
-     * @depends testOk
-     */
-    public function testOkay()
+    public function constantsProvider()
     {
-        $this->assertTrue(defined('okay'), 'Failed asserting that constant `okay` does not defined.');
-        $this->assertInternalType('bool', okay, 'Failed asserting that constant `ok` is not of type `bool`.');
-        $this->assertEquals(ok, okay, 'Failed asserting that constant `okay` is not match constant `ok`.');
+        return array(
+            array('yes', yes, true),
+            array('ok', ok, true),
+            array('okay', okay, true),
+            array('✔', ✔, true),
+            array('no', no, false),
+            array('not', not, false),
+            array('✘', ✘, false),
+        );
     }
-
-    public function testNo()
-    {
-        $this->assertTrue(defined('no'), 'Failed asserting that constant `no` does not defined.');
-        $this->assertInternalType('bool', no, 'Failed asserting that constant `no` is not of type `bool`.');
-        $this->assertFalse(no, 'Failed asserting that constant `no` is not `false`.');
-    }
-
-    /**
-     * @depends testNo
-     */
-    public function testNot()
-    {
-        $this->assertTrue(defined('not'), 'Failed asserting that constant `not` does not defined.');
-        $this->assertInternalType('bool', not, 'Failed asserting that constant `not` is not of type `bool`.');
-        $this->assertEquals(no, not, 'Failed asserting that constant `not` is not match constant `no`.');
-    }
-
-    /**
-     * @depends testNo
-     */
-    public function test✘() 
-    {
-        $this->assertTrue(defined('✘'), 'Failed asserting that constant `✘` does not defined.');
-        $this->assertInternalType('bool', ✘, 'Failed asserting that constant `✘` is not of type `bool`.');
-        $this->assertEquals(no, ✘, 'Failed asserting that constant `✘` is not match constant `no`.');
-    }
-
-    /**
-     * @depends testYes
-     */
-    public function test✔() 
-    {
-        $this->assertTrue(defined('✔'), 'Failed asserting that constant `✔` does not defined.');
-        $this->assertInternalType('bool', ✔, 'Failed asserting that constant `✔` is not of type `bool`.');
-        $this->assertEquals(yes, ✔, 'Failed asserting that constant `✔` is not match constant `yes`.');
-    }
-
+    
     /**
      * @param string $name
      * @param bool $value

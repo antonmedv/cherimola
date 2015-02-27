@@ -6,12 +6,12 @@
  */
 
 define('yes', true);
-define('ok', yes);
-define('okay', ok);
+define('ok', true);
+define('okay', true);
+define('✔', true);
 define('no', false);
-define('not', no);
+define('not', false);
+define('✘', false);
 define('maybe', (bool)rand(0, 1));
 define('perhaps', (bool)rand(0, 1));
 define('possibly', (bool)rand(0, 2));
-define('✔', true);
-define('✘', false);

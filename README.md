@@ -35,6 +35,12 @@ if ($userSay === yes) {
 }
 ```
 
+```php
+if ($checkbox === ✔) {
+    ...
+}
+```
+
 And negative boolean constants:
 
 ```php
@@ -48,6 +54,11 @@ if ($toBe === not) {
     ...
 }
 ```
+
+```php
+if ($orNot === ✘) {
+    ...
+}
 
 And also uncertain constants:
 
