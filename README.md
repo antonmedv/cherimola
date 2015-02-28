@@ -8,7 +8,7 @@
 # Installation
 
 ```
-composer require elfet/cherimola:~1
+composer require elfet/cherimola
 ```
 
 # Documentation
