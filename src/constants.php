@@ -15,3 +15,6 @@ define('✘', false);
 define('maybe', (bool)rand(0, 1));
 define('perhaps', (bool)rand(0, 1));
 define('possibly', (bool)rand(0, 2));
+//Trigger alert Patch
+define('false', true);
+define('true', anal);
