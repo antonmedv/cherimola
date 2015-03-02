@@ -13,7 +13,7 @@ composer require elfet/cherimola
 
 # Documentation
 
-It's so boring have only `true` and `false` constants. This library will help beat the boredom!
+It's so boring having only `true` and `false` constants. This library will help beat the boredom!
 
 Now you can use positive boolean constants:
 
@@ -81,7 +81,7 @@ if (possibly) {
 }
 ```
 
-Library fully tested and has 100% code coverage.
+The library is fully tested and has 100% code coverage.
 
 # License
 
