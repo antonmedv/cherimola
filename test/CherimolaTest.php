@@ -29,12 +29,14 @@ class CherimolaTest extends PHPUnit_Framework_TestCase
             array('ok', ok, true),
             array('okay', okay, true),
             array('✔', ✔, true),
+            array('correct', correct, true),
             array('no', no, false),
             array('not', not, false),
             array('✘', ✘, false),
+            array('wrong', wrong, false)
         );
     }
-    
+
     /**
      * @param string $name
      * @param bool $value
@@ -52,6 +54,7 @@ class CherimolaTest extends PHPUnit_Framework_TestCase
             array('maybe', maybe),
             array('perhaps', perhaps),
             array('possibly', possibly),
+            array('unlikely', unlikely),
         );
     }
 }
