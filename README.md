@@ -7,13 +7,15 @@
 
 # Installation
 
-```
-composer require elfet/cherimola
+Require the library using [Composer](https://getcomposer.org):
+
+```bash
+$ composer require elfet/cherimola
 ```
 
 # Documentation
 
-It's so boring having only `true` and `false` constants. This library will help beat the boredom!
+It's so boring having only `true` and `false` constants. This library will help beat that boredom!
 
 Now you can use positive boolean constants:
 
@@ -41,6 +43,12 @@ if ($checkbox === ✔) {
 }
 ```
 
+```php
+if ($solution === correct) {
+    ...
+}
+```
+
 And negative boolean constants:
 
 ```php
@@ -61,6 +69,12 @@ if ($orNot === ✘) {
 }
 ```
 
+```php
+if ($stealing === wrong) {
+    ...
+}
+```
+
 And also uncertain constants:
 
 ```php
@@ -77,6 +91,12 @@ if ($save === perhaps) {
 
 ```php
 if (possibly) {
+    ...
+}
+```
+
+```php
+if (unlikely) {
     ...
 }
 ```
