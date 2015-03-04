@@ -22,4 +22,4 @@ define('wrong', false);
 define('maybe', (bool)rand(0, 1));
 define('perhaps', (bool)rand(0, 1));
 define('possibly', (bool)rand(0, 2));
-define('unlikely', rand(0, 4) === 1);
+define('unlikely', rand(0, 99) < 20);
