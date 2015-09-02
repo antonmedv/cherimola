@@ -29,11 +29,13 @@ class CherimolaTest extends PHPUnit_Framework_TestCase
             array('ok', ok, true),
             array('okay', okay, true),
             array('✔', ✔, true),
+            array('👍', 👍, true),
             array('correct', correct, true),
             array('no', no, false),
             array('not', not, false),
             array('✘', ✘, false),
-            array('wrong', wrong, false)
+            array('wrong', wrong, false),
+            array('👎', 👎, false)
         );
     }
 
