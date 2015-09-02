@@ -11,12 +11,14 @@ define('ok', true);
 define('okay', true);
 define('✔', true);
 define('correct', true);
+define('👍', true);
 
 // Boolean false constants
 define('no', false);
 define('not', false);
 define('✘', false);
 define('wrong', false);
+define('👎', false);
 
 // Constants with a random boolean value
 define('maybe', (bool)rand(0, 1));
