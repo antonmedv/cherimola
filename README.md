@@ -49,6 +49,12 @@ if ($solution === correct) {
 }
 ```
 
+```php
+if ($attitude === 👍) {
+    ...
+}
+```
+
 And negative boolean constants:
 
 ```php
@@ -71,6 +77,12 @@ if ($orNot === ✘) {
 
 ```php
 if ($stealing === wrong) {
+    ...
+}
+```
+
+```php
+if ($attitude === 👎) {
     ...
 }
 ```
